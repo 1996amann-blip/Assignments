@@ -30,6 +30,11 @@ temp=float(input("Enter the temprature in Celcius : "))
 if temp>45:
     print("Temprature has exceeded 45"+chr(176)+"C.")
 
+#7
+s=input("Enter a string : ")
+if len(s)>8:
+    print("String length is more than 8 characters")
+
 #8
 p=(input("Enter the password : "))
 if p=='admin123':
