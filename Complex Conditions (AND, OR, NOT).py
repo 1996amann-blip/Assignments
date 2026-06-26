@@ -86,12 +86,18 @@ elif m==2 and y>=1582 and d>=1 and d<=28:
 else:
     print("Invalid Date")
 
-#8 (Doubt)
-E=input("Enter Email ID : ")
-if (' 'not in E) and ('@' in E) and ('.com' in E or '.org' in E or '.in' in E):
-    print("Valid Email ID")
+#8 
+e = str(input("Enter the Email Id : "))
+ichar = ["..", "(", ")", "[", "]", ":", ";", "<", ">", "\\"]
+if e.endswith(("@gmail.com", "@yahoo.com", "@hotmail.com")):
+    
+    if (e.count('@') != 1) or any(char in e for char in ichar):
+        print("Invalid Email Id")
+    else:
+        print("Valid Email Id")
 else:
-    print("Invalid Email ID")
+    print("Invalid Email Id")
+
 
 #9
 a=int(input("Enter age : "))
