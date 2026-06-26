@@ -84,10 +84,20 @@ else:
                     else:
                         print("Invalid Entry")
 
-#5(Doubt)
+#5
 p=input("Enter Password : ")
+u=set("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
+l=set("abcdefghijklmnopqrstuvwxyz")
+n=set("0123456789")
+s=set("""~!@#$%^&*()-_=+[]{}|;:'",.<>/?""")
+P=set(p)
 if len(p)>=8:
-)
+    if (P & u) and (P & l) and (P & s) and (P & n):
+        print("Strong Password")
+    else:
+        print("Weak Password")
+else:
+    print("Weak Password")
 
 #6
 amt=float(input("Enter Order Amount : "))
