@@ -61,7 +61,7 @@ if n>0:
 if c>0:
     print ("No. of digits : ",c)
 
-#9(doubt)
+#9
 n=int(input("Enter a no. : "))
 rn=0
 while n>0:
@@ -111,8 +111,18 @@ while p!="admin123":
 if p=="admin123":
     print("Correct Password")
 
-#14(Doubt)
-
+#14
+import random
+n=random.randint(1,10)
+print("Random no. : ",n," \n")
+ch=int(input("Enter your Guess : "))
+while ch!=n:
+    print("\nWRONG")
+    ch=int(input("\nEnter your Guess again : "))
+    if ch==n:
+        print("\nCORRECT")
+        break
+        
 #15
 n=int(input("Enter no. : "))
 t=0
